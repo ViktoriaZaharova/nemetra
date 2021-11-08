@@ -1,0 +1,301 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px)
+  .who-img
+    max-width: 400px
+    height: 470px
+
+  .who
+    padding: 70px 0
+
+  .who-content
+    width: calc(100% - 400px)
+    &:before
+      height: 370px
+      width: 200px
+
+  .text-transformation
+    right: -60px
+    h3
+      font-size: 50px
+      padding: 0 0 0 100px
+      &:before
+        width: 80px
+
+  .life-content
+    padding: 0 0 0 30px
+
+
+  .life
+    -webkit-background-size: 50%
+    background-size: 50%
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 1100px)
+  .life-img
+    order: 1
+
+  .life
+    background: transparent
+    padding: 50px 0 30px
+
+  .life-content
+    width: 100%
+    padding: 0
+    margin: 0 0 30px
+
+  .life-img
+    padding: 50px 50px 0
+    margin: 0 auto
+    display: flex
+    align-items: flex-start
+    justify-content: center
+    max-width: 500px
+    &:before
+      width: 100%
+
+  .life-gallery
+    margin: 30px 0 0
+    justify-content: center
+
+@media only screen and (max-width: 992px)
+  .logo
+    font-size: 18px
+
+  header
+    padding: 15px 0
+
+  .menu
+    margin: 0 30px 0 auto
+    font-size: 14px
+
+    li
+      margin: 0 15px 0 0
+
+  .home-img
+    margin: 0
+    max-width: 450px
+    height: 480px
+
+  .wrapper-my
+    padding: 60px 0 0
+    h1
+      font-size: 50px
+
+  .subtitle
+    font-size: 24px
+    margin: 10px 0 0
+
+  .home-content
+    padding: 30px
+    max-width: 450px
+    left: auto
+    right: 15px
+
+  .home:before
+    width: 300px
+
+  .home
+    &:after
+      left: 0
+      width: 330px
+      height: 360px
+
+  .who-content .box-text
+    max-width: 85%
+
+  .this-blog
+    padding: 60px 0
+    h2
+      font-size: 40px
+
+  .this-blog
+    padding: 0 0 0 30px
+
+  .callback-img
+    max-width: 350px
+    margin: 0
+    height: 420px
+
+  .callback-content
+    width: calc(100% - 350px)
+    padding: 0 0 0 40px
+    h5
+      margin: 0 0 10px
+      font-size: 16px
+
+  .callback
+    padding: 60px 0 40px
+    &:before
+      width: 400px
+      height: 240px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px)
+  header
+    .menu
+      display: none
+
+  .logo
+    margin: 0 auto 0 0
+
+  .btn-burger
+    display: flex
+
+  .who-content
+    padding: 0
+    width: 100%
+    margin: 0 0 30px
+    &:before
+      height: calc(100% - 30px)
+      width: 100px
+      right: 0
+
+  .who
+    padding: 50px 0
+
+  .text-transformation
+    position: relative
+    transform: none
+    right: 0
+    bottom: 0
+    h3
+      right: 0
+      font-size: 30px
+      padding: 0 0 0 60px
+      &:before
+        width: 45px
+
+  h2
+    font-size: 30px
+    margin: 0 0 20px
+
+  .who-img
+    max-width: 300px
+    height: 350px
+
+  .this-blog h2
+    font-size: 34px
+
+  .callback-content
+    width: 100%
+    padding: 0
+    margin: 0 0 30px
+
+  .callback-img
+    margin: 0 auto
+    order: 1
+
+  .blog-card
+    padding: 0 15px
+    background: transparent
+    &__body
+      background: #fff
+      padding: 20px
+
+  .latest-blog
+    padding: 40px 0 60px
+    h2
+      margin: 0 0 30px
+
+  .btn
+    font-size: 14px
+
+  .subscribe-content
+    padding: 30px
+
+  .subscribe
+    padding: 40px 0
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 576px)
+  .home-content
+    max-width: none
+    position: relative
+    transform: none
+    top: 0
+    right: 0
+
+  .wrapper-my
+    h1
+      font-size: 30px
+
+  .subtitle
+    font-size: 20px
+
+  .home-img
+    height: 300px
+    max-width: 280px
+    margin: 0 auto 30px
+
+  .home
+    padding: 40px 0
+    &:before
+      width: 100px
+    &:after
+      width: 200px
+      height: 200px
+
+  .life-gallery__item
+    margin: 0
+    width: calc(50% - 10px)
+
+  .life-gallery
+    justify-content: space-between
+
+  .box-text
+    font-size: 14px
+    p
+      margin: 0 0 20px
+
+  .wrapper-my
+    h2
+      font-size: 24px
+
+  .this-blog h2
+    font-size: 28px
+
+@media only screen and (max-width: 480px)
+  .life-gallery__item
+    height: 200px
+
+
+  .life-img
+    padding: 30px
+
+    &:before
+      height: 100%
+
+  .this-blog
+    padding: 40px 0
+
+  .form-group
+    label
+      width: 100%
+
+  label
+    margin: 0 0 15px
+
+  .form-subscribe
+    flex-direction: column
+    align-items: flex-start
+    label
+      width: 100%
+      margin: 0 0 15px
+      padding: 0
+    button
+      margin: 0 auto
+
+
+  footer
+    padding: 30px 0
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)
+  /**/
+
